@@ -7,6 +7,8 @@
   --dark_2: #000000;
   --light: #f2f2f2;
   --red_1: #D70920;
+  --violet_1: #540cc0;
+  --green: #80B842;
 }
 html{
     scroll-behavior: smooth;
@@ -553,9 +555,9 @@ intro-section, .intro-section .container_s .row {
 .topContent h1::after{
     position: absolute;
     content: '';
-    left: 50%;
+    left: 45%;
     bottom: 0px;
-    width: 60px;
+    width: 99px;
     height: 3px;
     margin-left: -30px;
     background: var(--red_1);
@@ -564,4 +566,109 @@ intro-section, .intro-section .container_s .row {
     font: 16px work sans;
     line-height: 1.5;
     color: #252525;
+}
+
+
+
+/* ---------------------------WATCH SECTION------------------------- */
+/* ---------------------------WATCH SECTION------------------------- */
+.watch{
+    background: var(--dark_1);
+}
+.single_watch{
+    margin: 50px 0;
+    width: 100%;
+    height: 600px;
+    border-bottom: 3px solid var(--red_1);
+}
+.all_content{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+   
+}
+.all_content::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.623);
+    /* filter: blur(300px); */
+}
+#twitch-embed_1, #twitch-embed_2, #twitch-embed_3, #twitch-embed_4{
+    z-index: 1;
+}
+.p_shape{
+    z-index: 1;
+    background: #0e0e10ad;
+    float: left;
+    height: 100%;
+    width: 50%;
+    clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 60% 100%, 0% 100%);
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+}
+.p_shape_2{
+    z-index: 1;
+    background: #0e0e10ad;
+    float: left;
+    height: 100%;
+    width: 50%;
+    clip-path: polygon(100% 0%, 60% 0%, 0% 50%, 40% 100%, 100% 100%);
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+}
+.p_1{
+    background: url("../img/Ovi.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p_2{
+    background: url("../img/Ashiq.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p_3{
+    background: url("../img/Noob.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p_4{
+    background: url("../img/Samid.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p_shape .text, .p_shape_2 .text{
+    position: absolute;
+    top: 35%;
+}
+.p_shape h1, .p_shape_2 h1{
+    font-size: 65px;
+    color: var(--green);
+}
+.p_shape a, .p_shape_2 a{
+    text-decoration: none;
+    color: var(--light);
+    font: 30px arial black;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--green);
+    transition: .5s;
+}
+.p_shape a:hover, .p_shape_2 a:hover{
+    background: var(--violet_1);
 }

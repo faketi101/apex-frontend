@@ -572,9 +572,7 @@ intro-section, .intro-section .container_s .row {
 
 /* ---------------------------WATCH SECTION------------------------- */
 /* ---------------------------WATCH SECTION------------------------- */
-.watch{
-    background: var(--dark_1);
-}
+
 .single_watch{
     margin: 50px 0;
     width: 100%;
@@ -595,7 +593,7 @@ intro-section, .intro-section .container_s .row {
     content: "";
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.623);
+    background: rgb(0 0 0 / 6%);
     /* filter: blur(300px); */
 }
 #twitch-embed_1, #twitch-embed_2, #twitch-embed_3, #twitch-embed_4{

@@ -94,3 +94,4 @@ $(document).ready(function(){
         $('.primaryMenu').removeClass("hdr-sticky");
     }
 });
+

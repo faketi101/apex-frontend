@@ -81,17 +81,5 @@ $(document).ready(function(){
   });
 
 
-  // sticky nav
-  
-  $(window).scroll(function() {
-    var scrollPos = $(window).scrollTop();
 
-    if(scrollPos  > 45) {
-        
-        $('.primaryMenu').addClass("hdr-sticky");
-    }
-    else if(scrollPos < 45){
-        $('.primaryMenu').removeClass("hdr-sticky");
-    }
-});
 
